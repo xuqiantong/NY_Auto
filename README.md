@@ -11,14 +11,16 @@ This website project includes:
 - Linux OS
 - Python 2.7
 - Django
-- Rest
+- Django Rest Framework
+- React for Javascript
 
 ## Install and Run
 - Install pip and npm:
-  ```sh
+  ```
   apt-get install python-pip
   apt-get install npm
   ```
+  
 - Install Dependencies:
   ```
   npm install
@@ -56,7 +58,7 @@ This website project includes:
   Then you can have look at the homepage at http://127.0.0.1:8000/home.
   
 ## Administraion System
-- 
-
-
-## 
+- Log in as the administrater. All the five tables are listed in the `DATA_BASE` section.
+- The administrator has the access to view, add, delete and modifiey any entry of data in any table.
+- Information about all the original vehicles and customers are already loaded into the database.
+- If someone want to sell a vehicle, contact information about the seller will be stored in `Customer` and information about the new vehicle will be stored in `Vehicle` as a new entry. Once any employee has checked and validated those vehicle information, administrator can simply check the `valid` filed of the vehicle, so that it is ready to be shown on the website.
