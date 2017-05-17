@@ -1,0 +1,22 @@
+.App {
+  font-family: 'Quicksand', sans-serif;
+  background-color: #eee;
+}
+
+.img-btn-group {
+  padding-top: 40px;
+  /*background: transparent;*/
+}
+.banner{
+    width: auto;
+    height: auto;
+    font-family: Avenir-Roman;
+    font-size: 40px;
+    text-align: center;
+    color: #830d99;
+    margin-bottom: 3%;
+}
+
+/*.img-btn {*/
+  /**/
+/*}*/

@@ -1,0 +1,97 @@
+.centered {
+  margin: 0 auto; }
+
+.carinfo-wrapper {
+  margin: 0 auto; }
+
+.info-wrapper {
+  background-color: #fff;
+  margin-top: 20px;
+  border-radius: 10px; }
+
+.basic-col {
+  padding-top: 5px;
+  padding-bottom: 5px; }
+
+.basicinfo-title {
+  padding-bottom: 10px; }
+
+.submit-btn {
+  margin: 0 auto; }
+
+.section-title {
+  font-size: 18px;
+  font-weight: normal;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-left: 15px;
+  background-color: #af1ec9;
+  margin-bottom: 10px;
+  color: #eee;
+  border-radius: 10px 10px 0 0;}
+
+.control-label {
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold; }
+
+.section-content {
+  margin-top: 20px; }
+
+.selectors {
+  margin-top: 5px; }
+
+.checkboxes {
+  padding-top: 20px;
+  margin-top: 20px; }
+
+.btn-bar {
+  padding-top: 30px; }
+
+.submit-btn {
+  width: 100%; }
+
+.carinfo-banner-wrapper {
+  width: 100%;
+  height: 300px;
+  background-image: url("../../bundles/images/dmspage/banner.jpg");
+  background-size: cover;
+  background-position: 0% 30%;
+  text-align: center;
+  line-height: 300px; }
+
+.banner-text {
+  height: 20px;
+  vertical-align: middle;
+  color: #eee;
+  font-size: 36px; }
+
+@media screen and (max-width: 780px) {
+  .carinfo-banner-wrapper {
+    width: 100%;
+    height: 200px;
+    line-height: 200px; }
+
+  .banner-text {
+    height: 20px;
+    vertical-align: middle;
+    color: #eee;
+    font-size: 20px; } }
+@media screen and (max-width: 480px) {
+  .carinfo-banner-wrapper {
+    width: 100%;
+    height: 150px;
+    line-height: 150px; }
+
+  .banner-text {
+    height: 20px;
+    vertical-align: middle;
+    color: #eee;
+    font-size: 16px; } }
+.btn-primary {
+  background-image: -webkit-linear-gradient(top, #af1ec9 0, #830d99 100%);
+  border-color: #830d99; }
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary:active:hover {
+  background-color: #830d99; }
+
+/*# sourceMappingURL=carbasicinfo.css.map */

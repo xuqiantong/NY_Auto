@@ -1,0 +1,28 @@
+.footerWrapper{
+    margin-top: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #1f2532;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+}
+.footerText{
+    opacity: 0.6;
+    font-family: Avenir-Book;
+    font-size: 12px;
+    line-height: 1.58;
+    text-align: left;
+    color: #ffffff;
+    list-style: none;
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+    .footerWrapper {
+        display: none;
+    }
+}

@@ -1,0 +1,148 @@
+#container{
+    width: 1440px;
+    height: 720px;
+    background-color: rgba(251, 247, 247, 0.48);
+    /*background-size: 100% 100%;*/
+    background-image: url("contact.png");
+    margin: 0 auto;
+}
+
+#stepsBanner{
+    padding-left: 49px;
+    padding-top: 30px;
+    width: 394px;
+    height: 30px;
+    font-family: "Avenir-Roman";
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+@font-face {
+    font-family: 'Avenir';
+    src: url("http://www.yoursite.com/fonts/Avenir_Next.otf"); /* File to be stored at your site */
+}
+
+#threeSteps{
+    font-family: Avenir;
+    font-size: 22px;
+    font-weight: 900;
+    font-style: oblique;
+  }
+
+#guidelineWrapper{
+    padding-left: 185px;
+    padding-top: 90px;
+}
+#step1{
+    width: 185px;
+    height: 23px;
+    font-family: Avenir;
+    font-size: 17px;
+    font-weight: 900;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    display: inline-block;
+}
+
+#spaceLine{
+    width: 125px;
+    display: inline-block;
+}
+
+#step2{
+    width: 397px;
+    height: 23px;
+    font-family: Avenir-Roman;
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    display: inline-block;
+}
+
+#step3{
+    width: 293px;
+    height: 23px;
+    font-family: Avenir-Roman;
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    display: inline-block;
+}
+
+#inputBox{
+    width: 689px;
+    height: 315px;
+    border-radius: 3px;
+    border: solid 1px #4a4a4a;
+    margin-left: 410px;
+    margin-top: 110px;
+}
+
+#description{
+    width: 599px;
+    height: 27px;
+    font-family: Avenir;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+    padding-left: 45px;
+    padding-top: 20px;
+}
+
+#enterVin{
+    width: 356px;
+    height: 40px;
+    border: solid 1px #000000;
+    margin-left: 167px;
+    margin-top: 50px;
+    font-family: Avenir-Roman;
+    font-size: 17px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: #000000;
+}
+
+#submit{
+    width: 300px;
+    height: 61px;
+    background-color: #1f2532;
+    margin-left: 195px;
+    margin-top: 50px;
+    font-family: Avenir;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}

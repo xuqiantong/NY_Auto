@@ -1,0 +1,13 @@
+p {
+  color: blue; }
+
+.col-lg-6 {
+  display: block;
+  width: 50%;
+  float: left;
+  position: relative; }
+  .col-lg-6 .car-img {
+    display: block;
+    float: left; }
+
+/*# sourceMappingURL=index.css.map */

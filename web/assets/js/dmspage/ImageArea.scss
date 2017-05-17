@@ -1,0 +1,15 @@
+.image-row.row {
+  padding-top: 40px;
+  padding-bottom: 10px;
+
+  @media screen and (max-width: 992px) {
+  	padding-top: 0;
+  padding-bottom: 0;
+  }
+}
+
+.imguploader-wrapper {
+  //background-color: #fff;
+  border: 1px solid transparent;
+  margin-top: 40px;
+}

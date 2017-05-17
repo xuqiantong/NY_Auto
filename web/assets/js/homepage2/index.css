@@ -1,0 +1,148 @@
+body {
+  width: 1440px;
+  font-family: sans-serif;
+  margin: auto; 
+}
+.car-display .car-filter-bar .search-button {
+    background-color: black;
+    border: none;
+    color: white;
+    float: right;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    height: 40px;
+    width: 80px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+.car-display {
+  width: 100%;
+  font-size: 15px;
+  line-height: 18px;
+  margin-top: 74px;
+  margin-left: auto;
+  margin-right: auto; 
+}
+.car-display .car-filter-bar {
+    width: 100%;
+    float: left;
+    padding-bottom: 37px; 
+  }
+
+.car-display .car-filter-bar .car-filter {
+      font-size: 20px;
+      width: 95px;
+      height: 25px;
+      padding: 36px;
+      margin: 0 30px 0 0;
+      display: inline;
+      float: left;
+      overflow: scroll;
+      border: none; }
+.car-display .col-lg-6 {
+    display: block;
+    width: 50%;
+    float: left;
+    position: relative;
+    padding: 40px 0 64px 0;
+    border-top: 1px solid gray;
+}
+.car-display .col-lg-6 .car-img {
+      display: block;
+      float: left;
+      margin-right: 25px; 
+}
+.car-display .col-lg-6 .car-name, .car-display .col-lg-6 .car-mile, .car-display .col-lg-6 .car-price, .car-display .col-lg-6 .car-color, .car-display .col-lg-6 .car-equips {
+      text-align: left;
+      margin-bottom: 15px; 
+}
+.car-display .col-lg-6 .car-price, .car-display .col-lg-6 .car-color {
+      font-weight: bold; }
+.car-display .col-lg-6 .ext-color, .car-display .col-lg-6 .int-color {
+      padding: 5px; 
+}
+.car-display .col-lg-6 .ext-color .car-color-circle, .car-display .col-lg-6 .int-color .car-color-circle {
+        display: inline-block;
+        vertical-align: middle; }
+.car-display .col-lg-6 .ext-color .car-color-circle {
+      padding-left: 5px; }
+.car-display .col-lg-6 .int-color .car-color-circle {
+      padding-left: 10px; }
+.car-display .loadmore {
+    display: inline-block;
+    height: 34px;
+    width: 100%;
+    background-color: gray;
+    text-align: center;
+    padding-top: 15px; }
+
+.sell-section {
+  width: 1191px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 129px; }
+.sell-section .sell-title {
+    font-size: 30px;
+    padding-bottom: 61px; }
+.sell-section .sell-ads {
+    width: 337px;
+    float: left;
+    padding: 0 30px; }
+.sell-section .sell-ads .sell-ads-desc {
+      padding-top: 29px; }
+.sell-section .start-sell {
+    background-color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 25px;
+    cursor: pointer;
+    margin: 54px 0;
+    border-radius: 8px;
+    box-shadow: none;
+    border: 2px solid black; }
+
+.offer-section {
+  width: 1440px;
+  height: 362px;
+  padding-top: 130px; }
+.offer-section .offer-title {
+    font-size: 30px;
+    padding-bottom: 38px; }
+.offer-section .offer-item {
+    width: 330px;
+    height: 289px;
+    float: left;
+    font-size: 20px;
+    padding: 0 15px; }
+.offer-section .offer-item .offer-item-title {
+      font-size: 25px;
+      padding-bottom: 48px; }
+
+.offer-section .offer-item .offer-item-desc {
+      padding-top: 48px;
+      width: 280px;
+      margin-left: auto;
+      margin-right: auto; }
+
+.media-section {
+  width: 1440px;
+  height: 100px;
+  padding-top: 120px;
+  margin-bottom: 37px; }
+.media-section .media-title {
+    font-size: 24px;
+    padding-bottom: 46px; }
+.media-section .media-contents {
+    width: 692px;
+    height: 30px;
+    margin: 0 auto; }
+.media-section .media-contents .media-icon {
+      display: inline-block;
+      width: 123px;
+      float: left;
+      padding: 0 25px; }
+
+/*# sourceMappingURL=index.css.map */

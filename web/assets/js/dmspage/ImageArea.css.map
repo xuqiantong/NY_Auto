@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,cAAe;EACb,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,IAAI;EAEpB,oCAAqC;IAJvC,cAAe;MAKZ,WAAW,EAAE,CAAC;MACf,cAAc,EAAE,CAAC;;AAInB,oBAAqB;EAEnB,MAAM,EAAE,qBAAqB;EAC7B,UAAU,EAAE,IAAI",
+"sources": ["ImageArea.scss"],
+"names": [],
+"file": "ImageArea.css"
+}

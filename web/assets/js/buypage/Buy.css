@@ -1,0 +1,76 @@
+.buy-page {
+   }
+  .buy-filter {
+    margin-top: 40px; }
+
+    .buy-filter-header {
+      padding: 5px;
+      border: solid 0.6px #979797;
+      border-radius: 5%;
+      background-color: #fbf8f8; }
+
+      .buy-filter-header-button {
+         }
+
+      .buy-filter-header-word {
+         }
+
+    .buy-filter-body {
+      padding: 5px;
+      border: solid 0.6px #979797;
+      border-radius: 0.5%;
+      background-color: #fbf8f8; }
+    .buy-filter-container {
+       }
+
+      .buy-filter-title {
+         }
+
+      .buy-filter-popular {
+         }
+        .buy-filter-hits-button {
+           }
+      .buy-filter-make {
+         }
+        .buy-filter-makes-button {
+           }
+        .buy-filter-make-options {
+           }
+      .buy-filter-slider {}
+      .buy-filter-checkbox {}
+        .buy-filter-box {
+           }
+      .buy-filter-color {
+          margin-top: 10px; }
+        .buy-filter-col {
+          height: 30px;
+          width: 30px;
+          border-radius: 50%;
+          border: 0.1px solid gray;
+          background-color: white;
+          font-size: 10px; }
+
+  .buy-carlist {
+     }
+
+    .buy-carlist-car {
+      margin-top: 40px; 
+      height: 305px;}
+
+    .buy-car {
+       }
+      .buy-car-image-wrapper {
+        height: 192px;
+        border: 1px solid #eee;
+        border-radius: 5px 5px 0 0;
+      }
+
+    .buy-page .buy-carlist .loadmore {
+       }
+      .buy-car-panel {
+        background-color: #fbf8f8; }
+        .car-attribute {
+        /*margin-top: 5px;*/
+        }
+
+/*. sourceMappingURL=CarDetail.css.map */

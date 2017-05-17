@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<!-- Font -->
+        <link href="https://fonts.googleapis.com/css?family=Quicksand:light,regular,medium,bold" rel="stylesheet">
+</head>
+<body>
+
+	<form action="/account/" method="post">
+	{% csrf_token %}
+    {{ form.as_p }}
+    <input type="submit" value="Submit" />
+    
+</form>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+.signIn{
+    position: absolute;
+    float: right;
+    right: 5px;
+    top:5px;
+}
+
+@media only screen and (max-width: 992px) {
+    .navWrapper {
+        display: none;
+    }
+}

@@ -1,0 +1,10 @@
+web/xqt_test/migrations/*.pyc
+web/xqt_test/*.pyc
+
+#assets/bundles/*.js
+
+#web/webpack-stats.json
+
+web/mysite/*.pyc
+.DS_Store
+*.pyc
