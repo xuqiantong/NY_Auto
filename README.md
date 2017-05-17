@@ -36,7 +36,7 @@ This website project includes:
   ```
   git clone git@github.com:oka2/ny-auto-backend.git
   ```
-- `cd` to the `ny-auto-backend/web` folder which includes all the sorce codes.
+- `cd` to the `NY_Auto/web` folder which includes all the sorce codes.
 - Complie front-end renders:
   ```
   ./node_modules/.bin/webpack --config webpack.config.js
@@ -61,4 +61,5 @@ This website project includes:
 - Log in as the administrater. All the five tables are listed in the `DATA_BASE` section.
 - The administrator has the access to view, add, delete and modifiey any entry of data in any table.
 - Information about all the original vehicles and customers are already loaded into the database.
-- If someone want to sell a vehicle, contact information about the seller will be stored in `Customer` and information about the new vehicle will be stored in `Vehicle` as a new entry. Once any employee has checked and validated those vehicle information, administrator can simply check the `valid` filed of the vehicle, so that it is ready to be shown on the website.
+- If someone want to sell a vehicle, contact information about the seller will be stored in `Customers` and information about the new vehicle will be stored in `Vehicles` as a new entry. Once any employee has checked and validated those vehicle information, administrator can simply check the `valid` filed of the vehicle, so that it is ready to be shown on the website.
+- 
