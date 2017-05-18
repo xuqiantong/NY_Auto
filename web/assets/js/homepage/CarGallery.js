@@ -8,7 +8,8 @@ function CarName(props) {
     const make = props.name.vehicle_make;
     const year = props.name.vehicle_year;
     const model = props.name.vehicle_model;
-    const trim = props.name.vehicle_trim;
+    var trim = props.name.vehicle_trim;
+    if (trim == "" || trim == "-") trim = "";
     return (
         <div className="car-name">
             {year} {make} {model} {trim}
@@ -64,18 +65,28 @@ function Car(props) {
     const car = props.car;
     console.log(car);
 
+    const bgImage = car.image_path;
+    const itemStyle = {
+            backgroundImage: "url(" + bgImage + ")",
+            backgroundSize: "cover",
+            backgroundPositionY: "50%",
+            backgroundPositionX: "50%"
+        };
+
     return (
         <div className="car-display">
-            <Image class="car-img" id={car.vehicle_id} path={car.image_path} width="366" height="250" />
-            <CarName name={car}/>
-            <div className="car-mile">
-                {car.vehicle_mileage} miles
+            <div className="col-md-6 col-md-push-1 col-sm-10 col-sm-push-1 col-xs-10 col-xs-push-1 car-img-wrapper" id={car.vehicle_id} style={itemStyle}></div>
+            <div className="col-md-5 col-md-push-1 col-sm-10 col-sm-push-1 col-xs-10 col-xs-push-1 ">
+              <CarName name={car}/>
+              <div className="car-mile">
+                  {car.vehicle_mileage} miles
+              </div>
+              <div className="car-price">
+                  $ {car.vehicle_list_price}
+              </div>
+              <CarColor color={car}/>
+              <CarEquip equips={car}/>
             </div>
-            <div className="car-price">
-                $ {car.vehicle_list_price}
-            </div>
-            <CarColor color={car}/>
-            <CarEquip equips={car}/>
         </div>
     );
 }
@@ -83,7 +94,7 @@ function Car(props) {
 function LoadMore(props) {
     return (
         <div className="loadmore">
-            Load More
+            <a className="loadmore" href="/buy">Load More</a>
         </div>
     );
 }

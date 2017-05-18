@@ -250,7 +250,8 @@ function Car(props) {
     const itemStyle = {
             backgroundImage: "url(" + bgImage + ")",
             backgroundSize: "cover",
-            backgroundPositionY: "50%"
+            backgroundPositionY: "50%",
+            backgroundPositionX: "50%"
         };
 
     return (
