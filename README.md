@@ -15,12 +15,16 @@ This website project includes:
 - React for Javascript
 
 ## Install and Run
+- `cd` to the folder you want to place this project and clone this repo:
+  ```
+  git clone https://github.com/xuqiantong/NY_Auto.git
+  ```
+- `cd` to the `NY_Auto/web` folder which includes all the sorce codes.
 - Install pip and npm:
   ```
   apt-get install python-pip
   apt-get install npm
   ```
-  
 - Install Dependencies:
   ```
   npm install
@@ -32,11 +36,6 @@ This website project includes:
   pip install django-webpack-loader
   ```
   See https://docs.djangoproject.com/en/1.11/topics/install/ for more details.
-- `cd` to the folder you want to place this project and clone this repo:
-  ```
-  git clone https://github.com/xuqiantong/NY_Auto.git
-  ```
-- `cd` to the `NY_Auto/web` folder which includes all the sorce codes.
 - Complie front-end renders:
   ```
   ./node_modules/.bin/webpack --config webpack.config.js
@@ -55,7 +54,7 @@ This website project includes:
   Starting development server at http://127.0.0.1:8000/
   Quit the server with CONTROL-C.
   ```
-  Then you can have look at the homepage at http://127.0.0.1:8000/home.
+  Then you can have a look at the homepage at http://127.0.0.1:8000/home.
   
 ## Administraion System Instruction
 - Log in as the administrater at http://127.0.0.1:8000/admin. All the five tables are listed in the `DATA_BASE` section.
