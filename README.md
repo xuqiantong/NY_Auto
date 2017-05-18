@@ -7,6 +7,8 @@ This website project includes:
 - Clinent Side Interfaces: browsing, selling vehicles on desktop and mobile devices for customers.
 - Data Management System: administration and different levels of accesses of vehicle data for employees.
 
+![Screen_shot](Screen_shot.png)
+
 ## Requirements
 - Linux OS
 - Python 2.7
@@ -56,7 +58,7 @@ This website project includes:
   Quit the server with CONTROL-C.
   ```
   Then you can have a look at the homepage at http://127.0.0.1:8000/home.
-  
+
 ## Administraion System Instruction
 - Log in as the administrater at http://127.0.0.1:8000/admin. All the five tables are listed in the `DATA_BASE` section.
 - The administrator has the access to view, add, delete and modify any entry of data in any table.
