@@ -95,7 +95,8 @@ body {
   /*width: 1191px;*/
   margin-left: auto;
   margin-right: auto;
-  padding-top: 129px; }
+  padding-top: 129px; 
+  text-align: center; }
 .sell-section .sell-title {
     font-size: 30px;
     padding-bottom: 61px; }
@@ -121,7 +122,8 @@ body {
 .offer-section {
   /*width: 1440px;*/
   height: 362px;
-  padding-top: 130px; }
+  padding-top: 130px; 
+  text-align: center; }
 .offer-section .offer-title {
     font-size: 30px;
     padding-bottom: 38px; }
@@ -149,7 +151,8 @@ body {
 margin-top: 130px;}
 .media-section .media-title {
     font-size: 30px;
-    padding-bottom: 46px; }
+    padding-bottom: 46px; 
+    text-align: center; }
 .media-section .media-contents {
     /*width: 692px;*/
     height: 30px;
@@ -179,6 +182,18 @@ margin-top: 130px;}
     .offer-section .offer-item .offer-item-title {
          padding-bottom: 0px;
     }
+}
+
+.sell-img-wrapper {
+  text-align: center;
+}
+
+.sell-img {
+  margin: 0 auto;
+}
+
+a.button-a {
+  color: black;
 }
 
 /*# sourceMappingURL=index.css.map */

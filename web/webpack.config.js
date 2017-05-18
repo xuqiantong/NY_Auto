@@ -16,7 +16,8 @@ module.exports = {
         login: './assets/js/login',
         dms: './assets/js/dms',
         detail: './assets/js/detail',
-        buy: './assets/js/buy'
+        buy: './assets/js/buy',
+        about: './assets/js/about'
     },
     
     output: {

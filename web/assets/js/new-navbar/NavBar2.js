@@ -47,8 +47,12 @@ class CreateNavRight extends Component {
                     <NavigationLink2 id="buy-link" classname="nav-link" eventKey={2} text="Purchase" url="/buy" />
                     <NavigationLink2 id="sell1-link" classname="nav-link" eventKey={3} text="Trade-in" url="/sell1" />
                     <NavigationLink2 id="blog-link" classname="nav-link" eventKey={4} text="Blog" url="/blog" />
-                    <NavigationLink2 id="about-link" classname="nav-link" eventKey={5} text="About" url="/about" />
-                    <NavigationLink2 id="about-link" classname="nav-link" eventKey={6} text="Sign In" url="/login" />
+                    <NavigationLink2 id="about-link" classname="nav-link" eventKey={5} text="About" url="/" />
+                    <NavDropdown eventKey={6} title="Sign In" id="basic-nav-dropdown">
+                        <MenuItem eventKey={6.1}>Account Settings</MenuItem>
+                        <MenuItem divider />
+                        <MenuItem eventKey={6.2}>Sign Out</MenuItem>
+                    </NavDropdown>
                 </Nav>
             );
         }
@@ -59,8 +63,12 @@ class CreateNavRight extends Component {
                     <NavigationLink2 id="buy-link" classname="active nav-link" eventKey={2} text="Purchase" url="/buy" />
                     <NavigationLink2 id="sell1-link" classname="nav-link" eventKey={3} text="Trade-in" url="/sell1" />
                     <NavigationLink2 id="blog-link" classname="nav-link" eventKey={4} text="Blog" url="/blog" />
-                    <NavigationLink2 id="about-link" classname="nav-link" eventKey={5} text="About" url="/about" />
-                    <NavigationLink2 id="about-link" classname="nav-link" eventKey={6} text="Sign In" url="/login" />
+                    <NavigationLink2 id="about-link" classname="nav-link" eventKey={5} text="About" url="/" />
+                    <NavDropdown eventKey={6} title="Sign In" id="basic-nav-dropdown">
+                        <MenuItem eventKey={6.1}>Account Settings</MenuItem>
+                        <MenuItem divider />
+                        <MenuItem eventKey={6.2}>Sign Out</MenuItem>
+                    </NavDropdown>
                 </Nav>
             );
         }
@@ -71,8 +79,12 @@ class CreateNavRight extends Component {
                         <NavigationLink2 id="buy-link" classname="nav-link" eventKey={2} text="Purchase" url="/buy" />
                         <NavigationLink2 id="sell1-link" classname="active nav-link" eventKey={3} text="Trade-in" url="/sell1" />
                         <NavigationLink2 id="blog-link" classname="nav-link" eventKey={4} text="Blog" url="/blog" />
-                        <NavigationLink2 id="about-link" classname="nav-link" eventKey={5} text="About" url="/about" />
-                        <NavigationLink2 id="about-link" classname="nav-link" eventKey={6} text="Sign In" url="/login" />
+                        <NavigationLink2 id="about-link" classname="nav-link" eventKey={5} text="About" url="/" />
+                        <NavDropdown eventKey={6} title="Sign In" id="basic-nav-dropdown">
+                            <MenuItem eventKey={6.1}>Account Settings</MenuItem>
+                            <MenuItem divider />
+                            <MenuItem eventKey={6.2}>Sign Out</MenuItem>
+                        </NavDropdown>
                     </Nav>
                 );
         }
@@ -83,20 +95,12 @@ class CreateNavRight extends Component {
                         <NavigationLink2 id="buy-link" classname="nav-link" eventKey={2} text="Purchase" url="/buy" />
                         <NavigationLink2 id="sell1-link" classname="nav-link" eventKey={3} text="Trade-in" url="/sell1" />
                         <NavigationLink2 id="blog-link" classname="active nav-link" eventKey={4} text="Blog" url="/blog" />
-                        <NavigationLink2 id="about-link" classname="nav-link" eventKey={5} text="About" url="/about" />
-                        <NavigationLink2 id="about-link" classname="nav-link" eventKey={6} text="Sign In" url="/login" />
-                    </Nav>
-                );
-        }
-        else if (active === "about") {
-            return(
-                    <Nav pullRight id="nav-right" activeKey={this.state.activeKey} onSelect={this.handleSelect}>
-                        <NavigationLink2 id="home-link" classname="nav-link" eventKey={1} text="Home" url="/home" />
-                        <NavigationLink2 id="buy-link" classname="nav-link" eventKey={2} text="Purchase" url="/buy" />
-                        <NavigationLink2 id="sell1-link" classname="nav-link" eventKey={3} text="Trade-in" url="/sell1" />
-                        <NavigationLink2 id="blog-link" classname="nav-link" eventKey={4} text="Blog" url="/blog" />
-                        <NavigationLink2 id="about-link" classname="active nav-link" eventKey={5} text="About" url="/about" />
-                        <NavigationLink2 id="about-link" classname="nav-link" eventKey={6} text="Sign In" url="/login" />
+                        <NavigationLink2 id="about-link" classname="nav-link" eventKey={5} text="About" url="/" />
+                        <NavDropdown eventKey={6} title="Sign In" id="basic-nav-dropdown">
+                            <MenuItem eventKey={6.1}>Account Settings</MenuItem>
+                            <MenuItem divider />
+                            <MenuItem eventKey={6.2}>Sign Out</MenuItem>
+                        </NavDropdown>
                     </Nav>
                 );
         }
@@ -107,8 +111,12 @@ class CreateNavRight extends Component {
                     <NavigationLink2 id="buy-link" classname="nav-link" eventKey={2} text="Purchase" url="/buy" />
                     <NavigationLink2 id="sell1-link" classname="nav-link" eventKey={3} text="Trade-in" url="/sell1" />
                     <NavigationLink2 id="blog-link" classname="nav-link" eventKey={4} text="Blog" url="/blog" />
-                    <NavigationLink2 id="about-link" classname="nav-link" eventKey={5} text="About" url="/about" />
-                    <NavigationLink2 id="about-link" classname="nav-link" eventKey={6} text="Sign In" url="/login" />
+                    <NavigationLink2 id="about-link" classname="nav-link" eventKey={5} text="About" url="/" />
+                    <NavDropdown eventKey={6} title="Sign In" id="basic-nav-dropdown">
+                        <MenuItem eventKey={6.1}>Account Settings</MenuItem>
+                        <MenuItem divider />
+                        <MenuItem eventKey={6.2}>Sign Out</MenuItem>
+                    </NavDropdown>
                 </Nav>
             );
         }

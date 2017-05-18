@@ -39,6 +39,7 @@ urlpatterns = [
     url(r'^buy', TemplateView.as_view(template_name="buy.html")),
     url(r'^sell1', TemplateView.as_view(template_name="dms.html")),
     url(r'^blog', TemplateView.as_view(template_name="blog.html")),
+    url(r'^about', TemplateView.as_view(template_name="about.html")),
 	url(r'^home', TemplateView.as_view(template_name="index.html")),
     url(r'^account/', views.make_account),
     url(r'^admin/', admin.site.urls),
