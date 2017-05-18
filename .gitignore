@@ -4,4 +4,4 @@ web/mysite/*.pyc
 .DS_Store
 *.pyc
 web/node_modules
-
+web/.Python
