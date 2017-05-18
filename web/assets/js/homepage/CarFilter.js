@@ -184,7 +184,7 @@ class FilterSort extends React.Component {
 
 
 
-
+//bind the change of the filters and update the searchkey state in the cargallery
 export default class CarFilter extends React.Component {
     constructor(props) {
         super(props);

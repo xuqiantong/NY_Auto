@@ -5,3 +5,4 @@ web/mysite/*.pyc
 *.pyc
 web/node_modules
 web/.Python
+web/lib

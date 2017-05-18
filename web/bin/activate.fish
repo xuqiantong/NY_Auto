@@ -36,7 +36,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/Users/dadadu/Desktop/cs-5150/ny-auto-backend/web"
+set -gx VIRTUAL_ENV "/Users/dadadu/Desktop/cs-5150/NY_Auto/web"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH

@@ -10,7 +10,7 @@ export default class MediaSection extends React.Component {
         return(
             <div className="media-section col-md-12 col-sm-12">
                 <div className="media-title col-md-12 col-sm-12">
-                    Media
+                     Media
                 </div>
                 <div className="media-contents col-md-12 col-sm-12">
                     <div className="media-icon col-md-3 col-sm-6">

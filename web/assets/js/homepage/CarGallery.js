@@ -87,10 +87,9 @@ function LoadMore(props) {
         </div>
     );
 }
-
+//get data from database and filter
 var CarGallery = React.createClass({
     loadCarsFromServer: function(){
-
         $.ajax({
             url: this.props.url1,
             datatype: 'json',
@@ -119,8 +118,6 @@ var CarGallery = React.createClass({
 
     componentDidMount: function() {
         this.loadCarsFromServer();
-        setInterval(this.loadCarsFromServer, 
-                    this.props.pollInterval)
     }, 
 
     render: function() { 
@@ -130,135 +127,241 @@ var CarGallery = React.createClass({
         var vehicle_images = this.state.vehicle_image;
         
         if (this.state.vehicles && this.state.vehicle_image) {
-            console.log(this.state.vehicles);
-            console.log(this.state.vehicle_image);
              vehicles = this.state.vehicles.map(function(car){
                       var id = car.id;
                       var equip_count = 0;
                       var equips = "";
-                      if (car.equipment_AirConditioning){
+                      if (car.eb_Power_Mirrors){
                           if (equip_count < 3){ 
-                            equips = equips.concat("AirConditioning ");
+                            equips = equips.concat("Power Mirrors/ ");
                             equip_count++;
                           }
                       }
-                      if (car.equipment_ChildSeatAnchors){
+                      if (car.eb_Power_Windows){
                           if (equip_count < 3){ 
-                            equips = equips.concat("ChildSeatAnchors ");
+                            equips = equips.concat("Power Windows/ ");
                             equip_count++;
                           }
                       }
-                      if (car.equipment_CruiseControl){
+                      if (car.eb_Traction_Control){
                           if (equip_count < 3){ 
-                            equips = equips.concat("CruiseControl ");
+                            equips = equips.concat("Traction Control/ ");
                             equip_count++;
                           }
                       }
-                      if (car.equipment_ChildSeat){
+                      if (car.eb_Stability_Control){
                           if (equip_count < 3){ 
-                            equips = equips.concat("ChildSeat ");
+                            equips = equips.concat("Stability Control/ ");
                             equip_count++;
                           }
                       }
-                      if (car.equipment_PowerDoorLocks){
+                      if (car.eb_Cruise_Control){
                           if (equip_count < 3){ 
-                            equips = equips.concat("PowerDoorLocks ");
+                            equips = equips.concat("Cruise Control/ ");
                             equip_count++;
                           }
                       }
-                      if (car.equipment_PowerMirror){
+                      if (car.eb_Security_System){
                           if (equip_count < 3){ 
-                            equips = equips.concat("PowerMirror ");
+                            equips = equips.concat("Security System/ ");
                             equip_count++;
                           }
                       }
-                      if (car.equipment_PowerWindows){
+                      if (car.eb_Tire_Pressure_Monitoring_System){
                           if (equip_count < 3){ 
-                            equips = equips.concat("PowerWindows ");
+                            equips = equips.concat("Tire Pressure Monitoring System/ ");
                             equip_count++;
                           }
                       }
-                      if (car.equipment_RearWindowDefroster){
+                      if (car.eb_Radio_CD_Player){
                           if (equip_count < 3){ 
-                            equips = equips.concat("RearWindowDefroster ");
+                            equips = equips.concat("Radio CD Player/ ");
                             equip_count++;
                           }
                       }
-                      if (car.equipment_AirBagSideCurtain){
+                      if (car.eb_AUX){
                           if (equip_count < 3){ 
-                            equips = equips.concat("AirBagSideCurtain ");
+                            equips = equips.concat("AUX/ ");
                             equip_count++;
                           }
                       }
-                      if (car.equipment_Airbags){
+                      if (car.eb_USB){
                           if (equip_count < 3){ 
-                            equips = equips.concat("Airbags ");
+                            equips = equips.concat("USB/ ");
                             equip_count++;
                           }
                       }
-                      if (car.equipment_TiltTelescopeWheel){
+                      if (car.eb_Steering_Wheel_Audio_Control){
                           if (equip_count < 3){ 
-                            equips = equips.concat("TiltTelescopeWheel ");
+                            equips = equips.concat("Steering Wheel Audio Control/ ");
                             equip_count++;
                           }
                       }
-                      if (car.equipment_TintedGlass){
+                      if (car.eb_AntiLock_Brake_System){
                           if (equip_count < 3){ 
-                            equips = equips.concat("TintedGlass ");
+                            equips = equips.concat("AntiLock Brake System/ ");
                             equip_count++;
                           }
                       }
-                      if (car.equipment_AlloyWheels){
+                      if (car.eb_AC){
                           if (equip_count < 3){ 
-                            equips = equips.concat("AlloyWheels ");
+                            equips = equips.concat("eb_AC/ ");
                             equip_count++;
                           }
                       }
-                      if (car.equipment_PowerBrakes){
+                      if (car.es_Universal_Garage_Opener){
                           if (equip_count < 3){ 
-                            equips = equips.concat("PowerBrakes ");
+                            equips = equips.concat("Universal Garage Opener/ ");
                             equip_count++;
                           }
                       }
-                      if (car.equipment_AntilockBrakes){
+                      if (car.es_Power_Seats_Driver){
                           if (equip_count < 3){ 
-                            equips = equips.concat("AntilockBrakes ");
+                            equips = equips.concat("Power Seats Driver/ ");
                             equip_count++;
                           }
                       }
-                      if (car.equipment_PowerSeats){
+                      if (car.es_Power_Seats_Both){
                           if (equip_count < 3){ 
-                            equips = equips.concat("PowerSeats ");
+                            equips = equips.concat("Power_Seats_Both/ ");
                             equip_count++;
                           }
                       }
-                      if (car.equipment_PowerSteering){
+                      if (car.es_Rain_Sensing_Wiper){
                           if (equip_count < 3){ 
-                            equips = equips.concat("PowerSteering ");
+                            equips = equips.concat("Rain Sensing Wiper/ ");
                             equip_count++;
                           }
                       }
-                      if (car.equipment_DVD){
+                      if (car.es_Back_Up_Camera){
                           if (equip_count < 3){ 
-                            equips = equips.concat("DVD ");
+                            equips = equips.concat("Back Up Camera/ ");
                             equip_count++;
                           }
                       }
-                      if (car.equipment_GPS){
+                      if (car.es_Parking_Sensor){
                           if (equip_count < 3){ 
-                            equips = equips.concat("GPS ");
+                            equips = equips.concat("Parking Sensor/ ");
                             equip_count++;
                           }
                       }
-                      if (car.equipment_DualClimateControl){
+                      if (car.es_Sunroof){
                           if (equip_count < 3){ 
-                            equips = equips.concat("DualClimateControl ");
+                            equips = equips.concat("Sunroof/ ");
                             equip_count++;
                           }
                       }
-                      if (car.equipment_HeatedSeats){
+                      if (car.es_All_Weather_Floor_Mats){
                           if (equip_count < 3){ 
-                            equips = equips.concat("HeatedSeats ");
+                            equips = equips.concat("All Weather Floor Mats/ ");
+                            equip_count++;
+                          }
+                      }
+                      if (car.es_Automatic_Headlights){
+                          if (equip_count < 3){ 
+                            equips = equips.concat("Automatic Headlights/ ");
+                            equip_count++;
+                          }
+                      }
+                      if (car.es_Daytime_Running_Lights){
+                          if (equip_count < 3){ 
+                            equips = equips.concat("Daytime Running Lights/ ");
+                            equip_count++;
+                          }
+                      }
+                      if (car.es_Tilt_Steering_Wheel){
+                          if (equip_count < 3){ 
+                            equips = equips.concat("Tilt Steering Wheel/ ");
+                            equip_count++;
+                          }
+                      }
+                      if (car.es_Navigation_GPS){
+                          if (equip_count < 3){ 
+                            equips = equips.concat("Navigation GPS/ ");
+                            equip_count++;
+                          }
+                      }
+                      if (car.es_Dual_Climate_Control){
+                          if (equip_count < 3){ 
+                            equips = equips.concat("Dual Climate Control/ ");
+                            equip_count++;
+                          }
+                      }
+                      if (car.ep_Heads_Up_Display){
+                          if (equip_count < 3){ 
+                            equips = equips.concat("Heads Up Display/ ");
+                            equip_count++;
+                          }
+                      }
+                      if (car.ep_Heated_Seats_Front){
+                          if (equip_count < 3){ 
+                            equips = equips.concat("Heated Seats Front/ ");
+                            equip_count++;
+                          }
+                      }
+                      if (car.ep_Heated_Seats_Rear){
+                          if (equip_count < 3){ 
+                            equips = equips.concat("Heated Seats Rear/ ");
+                            equip_count++;
+                          }
+                      }
+                      if (car.ep_Cooled_Seats_Front){
+                          if (equip_count < 3){ 
+                            equips = equips.concat("Cooled Seats Front/ ");
+                            equip_count++;
+                          }
+                      }
+                      if (car.ep_Cooled_Seats_Rear){
+                          if (equip_count < 3){ 
+                            equips = equips.concat("Cooled Seats Rear/ ");
+                            equip_count++;
+                          }
+                      }
+                      if (car.ep_Lane_Departure_System){
+                          if (equip_count < 3){ 
+                            equips = equips.concat("Lane Departure System/ ");
+                            equip_count++;
+                          }
+                      }
+                      if (car.ep_Keyless_Entry){
+                          if (equip_count < 3){ 
+                            equips = equips.concat("Keyless Entry/ ");
+                            equip_count++;
+                          }
+                      }
+                      if (car.ep_Keyless_Start){
+                          if (equip_count < 3){ 
+                            equips = equips.concat("Keyless Start/ ");
+                            equip_count++;
+                          }
+                      }
+                      if (car.ep_Rear_Spoiler){
+                          if (equip_count < 3){ 
+                            equips = equips.concat("Rear Spoiler/ ");
+                            equip_count++;
+                          }
+                      }
+                      if (car.ep_Heated_Steering_Wheel){
+                          if (equip_count < 3){ 
+                            equips = equips.concat("Heated Steering Wheel/ ");
+                            equip_count++;
+                          }
+                      }
+                      if (car.ep_Panorama_Sunroof){
+                          if (equip_count < 3){ 
+                            equips = equips.concat("Panorama Sunroof/ ");
+                            equip_count++;
+                          }
+                      }
+                      if (car.ep_Night_Vision){
+                          if (equip_count < 3){ 
+                            equips = equips.concat("Night Vision/ ");
+                            equip_count++;
+                          }
+                      }
+                      if (car.ep_Premium_Stereo){
+                          if (equip_count < 3){ 
+                            equips = equips.concat("Premium Stereo/ ");
                             equip_count++;
                           }
                       }
@@ -288,7 +391,6 @@ var CarGallery = React.createClass({
                         }
                   
             })
-            console.log(vehicles);
             if (this.state.searchKeys.length > 0) {
                 var keys = this.state.searchKeys;
                 vehicles.map(function(car){
@@ -383,7 +485,6 @@ var CarGallery = React.createClass({
                      <div key={car.id} className="col-lg-6"> <Car car={car}/> </div>
                   )     
             });
-            console.log(vehicles);
         }
         return(
             <div className="car-display">
