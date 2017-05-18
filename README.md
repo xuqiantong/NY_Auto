@@ -34,7 +34,7 @@ This website project includes:
   See https://docs.djangoproject.com/en/1.11/topics/install/ for more details.
 - `cd` to the folder you want to place this project and clone this repo:
   ```
-  git clone git@github.com:oka2/ny-auto-backend.git
+  git clone https://github.com/xuqiantong/NY_Auto.git
   ```
 - `cd` to the `NY_Auto/web` folder which includes all the sorce codes.
 - Complie front-end renders:
