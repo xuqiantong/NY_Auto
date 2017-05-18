@@ -15,7 +15,7 @@ This website project includes:
 - Webpack
 - React for Javascript
 
-## Install and Run
+## Deploy and Run
 - `cd` to the folder you want to place this project and clone this repo:
   ```
   git clone https://github.com/xuqiantong/NY_Auto.git
