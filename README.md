@@ -58,7 +58,7 @@ This website project includes:
   Then you can have look at the homepage at http://127.0.0.1:8000/home.
   
 ## Administraion System Instruction
-- Log in as the administrater. All the five tables are listed in the `DATA_BASE` section.
+- Log in as the administrater at http://127.0.0.1:8000/admin. All the five tables are listed in the `DATA_BASE` section.
 - The administrator has the access to view, add, delete and modifiey any entry of data in any table.
 - Information about all the original vehicles and customers are already loaded into the database.
 - If someone want to sell a vehicle, contact information about the seller will be stored in `Customers` and information about the new vehicle will be stored in `Vehicles` as a new entry. Once any employee has checked and validated those vehicle information, administrator can simply check the `valid` filed of the vehicle, so that it is ready to be shown on the website.
