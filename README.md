@@ -4,7 +4,7 @@
 New York Auto Depot, Inc. is an entrepreneurial automotive dealership founded in 2012 by a group of college graduates who are also automotive enthusiasts. The company aims to provide personalized vehicle purchase consultation for college students at a lower price than traditional dealerships by making use of e-business technologies and new media platforms. It also connects car enthusiasts in various colleges and create a network of people who love or hope to learn about cars.
 
 This website project includes:
-- Clinent Side Interfaces: browsing, selling vehicles on desktop and mobile devices for customers.
+- Client Side Interfaces: browsing, selling vehicles on desktop and mobile devices for customers.
 - Data Management System: administration and different levels of accesses of vehicle data for employees.
 
 ![Screen_shot](Screen_shot.png)
