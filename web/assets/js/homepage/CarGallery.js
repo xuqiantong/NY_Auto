@@ -75,18 +75,20 @@ function Car(props) {
 
     return (
         <div className="car-display">
-            <div className="col-md-6 col-md-push-1 col-sm-10 col-sm-push-1 col-xs-10 col-xs-push-1 car-img-wrapper" id={car.vehicle_id} style={itemStyle}></div>
-            <div className="col-md-5 col-md-push-1 col-sm-10 col-sm-push-1 col-xs-10 col-xs-push-1 ">
-              <CarName name={car}/>
-              <div className="car-mile">
-                  {car.vehicle_mileage} miles
+            <a className="car-display-a" href={"/detail" + car.vehicle_id}>
+              <div className="col-md-6 col-md-push-1 col-sm-10 col-sm-push-1 col-xs-10 col-xs-push-1 car-img-wrapper" id={car.vehicle_id} style={itemStyle}></div>
+              <div className="col-md-5 col-md-push-1 col-sm-10 col-sm-push-1 col-xs-10 col-xs-push-1 ">
+                <CarName name={car}/>
+                <div className="car-mile">
+                    {car.vehicle_mileage} miles
+                </div>
+                <div className="car-price">
+                    $ {car.vehicle_list_price}
+                </div>
+                <CarColor color={car}/>
+                <CarEquip equips={car}/>
               </div>
-              <div className="car-price">
-                  $ {car.vehicle_list_price}
-              </div>
-              <CarColor color={car}/>
-              <CarEquip equips={car}/>
-            </div>
+            </a>
         </div>
     );
 }
