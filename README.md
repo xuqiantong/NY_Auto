@@ -4,8 +4,8 @@
 New York Auto Depot, Inc. is an entrepreneurial automotive dealership founded in 2012 by a group of college graduates who are also automotive enthusiasts. The company aims to provide personalized vehicle purchase consultation for college students at a lower price than traditional dealerships by making use of e-business technologies and new media platforms. It also connects car enthusiasts in various colleges and create a network of people who love or hope to learn about cars.
 
 This website project includes:
-- Client Side Interfaces: browsing, selling vehicles on desktop and mobile devices for customers.
-- Data Management System: administration and different levels of accesses of vehicle data for employees.
+- Client Side Interfaces: browsing and selling vehicles on desktop and mobile devices for customers.
+- Data Management System: admin portal and different levels of access to vehicle data for employees.
 
 ![Screen_shot](Screen_shot.png)
 
@@ -60,9 +60,9 @@ This website project includes:
   Then you can have a look at the homepage at http://127.0.0.1:8000/home.
 
 ## Administraion System Instruction
-- Log in as the administrater at http://127.0.0.1:8000/admin. All the five tables are listed in the `DATA_BASE` section.
-- The administrator has the access to view, add, delete and modify any entry of data in any table.
+- Log in as the administrator at http://127.0.0.1:8000/admin. All the five tables are listed in the `DATA_BASE` section.
+- The administrator has the the ability to view, add, delete, and modify any data entry in any table.
 - Information about all the original vehicles and customers are already loaded into the database.
-- If someone want to sell a vehicle, contact information about the seller will be stored in `Customers` and information about the new vehicle will be stored in `Vehicles` as a new entry. Once any employee has checked and validated those vehicle information, administrator can simply check the `valid` filed of the vehicle, so that it is ready to be shown on the website.
-- `Has_images`, `Sells`, `Favorites` are three relation tables, which use foreign keys to connect with `Vehicles` and `Customers` these two entity tables. If you remove an entry in `Vehicles` or `Customer`, all the information related to that entry will be automatically deleted as well. For example, if you delete a customer, all the informations like vehicles s/he liked or vehicles s/he sold will also be deleted. 
+- If someone want to sell a vehicle, contact information about the seller will be stored in `Customers` and information about the new vehicle will be stored in `Vehicles` as a new entry. Once any employee has checked and validated that vehicle's information, the administrator can simply check the `valid` field of the vehicle, so that it is ready to be shown on the website.
+- `Has_images`, `Sells`, `Favorites` are three relational tables, which use foreign keys to connect with `Vehicles` and `Customers`, two entity tables. If you remove an entry in `Vehicles` or `Customer`, all the information related to that entry will be automatically deleted as well. For example, if you delete a customer, all the information like vehicles s/he liked or vehicles s/he sold will also be deleted. 
 - All the photos updated by sellers will be stored in `web/photos`.
